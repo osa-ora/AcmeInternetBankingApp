@@ -8,12 +8,21 @@ A Sample internet banking web application using simple Java Web Technologies
 This web application uses 5 different micro-services, optionally you can connect via API Manager or directly to these services.
 Three of these Micro-services already uses MySQL to persist and query data, while one services connect to ActiveMQ to send messages to one Queue and another service connect to Redis to cach some results.
 These services are:
-- UserAccountService : https://github.com/osa-ora/UserAccountService
-- CustomerDataService : https://github.com/osa-ora/CustomerDataService
-- BankingService : https://github.com/osa-ora/BankingService
-- LoanService : https://github.com/osa-ora/LoanService
-- ExchangeRateService : https://github.com/osa-ora/ExchangeRateService
 
+- UserAccountService : hhttp ://localhost:8083/api/v1/accounts/login 
+- repository: https://github.com/osa-ora/UserAccountService
+
+- CustomerDataService : http ://localhost:8085/api/v1/customers/ 
+- repository: https://github.com/osa-ora/CustomerDataService
+
+- BankingService : http ://localhost:8086/api/v1/bankaccounts/ 
+- repository: https://github.com/osa-ora/BankingService
+
+- LoanService : http ://localhost:8000/LoanService/V1/ 
+- repository: https://github.com/osa-ora/LoanService
+
+- ExchangeRateService : http ://localhost:8881/api/v1/exchange/ 
+- repository: https://github.com/osa-ora/ExchangeRateService
 
 # It is a Netbeans based project that uses Apache ANT to build it simply run: 
 
