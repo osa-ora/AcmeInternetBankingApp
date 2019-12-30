@@ -45,4 +45,4 @@ This is how it looks like:
 
 ![InternetBanking](https://user-images.githubusercontent.com/18471537/71548532-c7287b00-29c0-11ea-9e4d-71315af2bda0.jpeg)
 
-And as you can see every widgen get the data from different source i.e. micro-services and if it is down, then this widget is only un-functionaly and the rest will resume working.
+And as you can see every widget get the data from different source i.e. micro-services and if one service is down, only the related widget get affected while the rest will resume working normally.
