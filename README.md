@@ -6,25 +6,26 @@ A Sample internet banking web application using simple Java Web Technologies
   <img width="960" alt="solution" src="https://user-images.githubusercontent.com/18471537/71592906-0f6fa680-2b43-11ea-97ea-9d9e91a2d985.png">
 
 This web application uses 5 different micro-services, optionally you can connect via API Manager or directly to these services.
-Three of these Micro-services already uses MySQL to persist and query data, while one services connect to ActiveMQ to send messages to one Queue and another service connect to Redis to cach some results.
+Three of these Micro-services already uses MySQL to persist and query data, while one services (BankingService) connect to ActiveMQ to send messages to one Queue and another service (ExchangeRateService) connect to Redis to cache some results.
+
 These services are:
 
-- UserAccountService : hhttp ://localhost:8083/api/v1/accounts/login 
-- repository: https://github.com/osa-ora/UserAccountService
+- UserAccountService : 
+ repository: https://github.com/osa-ora/UserAccountService
 
-- CustomerDataService : http ://localhost:8085/api/v1/customers/ 
-- repository: https://github.com/osa-ora/CustomerDataService
+- CustomerDataService :  
+ repository: https://github.com/osa-ora/CustomerDataService
 
-- BankingService : http ://localhost:8086/api/v1/bankaccounts/ 
-- repository: https://github.com/osa-ora/BankingService
+- BankingService :  
+ repository: https://github.com/osa-ora/BankingService
 
-- LoanService : http ://localhost:8000/LoanService/V1/ 
-- repository: https://github.com/osa-ora/LoanService
+- LoanService : 
+ repository: https://github.com/osa-ora/LoanService
 
-- ExchangeRateService : http ://localhost:8881/api/v1/exchange/ 
-- repository: https://github.com/osa-ora/ExchangeRateService
+- ExchangeRateService :  
+ repository: https://github.com/osa-ora/ExchangeRateService
 
-# It is a Netbeans based project that uses Apache ANT to build it simply run: 
+# It is a Netbeans based project that uses Maven to build it simply run: 
 
 - mvn clean install compile package
 
@@ -32,11 +33,11 @@ These services are:
 
 # The service do expect 5 different environment variables to connect to different backend microservices:
 
-- userAccountService the default is http://localhost:8083/AccountService/V1/accounts/
-- customerDataService the default is http://localhost:8085/CustomersService/V1/customers/
-- bankingService the default is http://localhost:8086/BankAccountService/V1/bankaccounts/
-- loanService the default is http://localhost:8000/LoanService/V1/
-- exchangeRateService the default is http://localhost:8881/api/v1/exchange/
+- userAccountService the default value is http ://localhost:8083/api/v1/accounts/login 
+- customerDataService the default value is http ://localhost:8085/api/v1/customers/
+- bankingService the default value is http ://localhost:8086/api/v1/bankaccounts/
+- loanService the default value is http ://localhost:8000/LoanService/V1/ 
+- exchangeRateService the default value is http ://localhost:8881/api/v1/exchange/
 
 # Web Interface
 
