@@ -101,7 +101,7 @@ public class DataServlet extends HttpServlet {
                         transferRequest.setAmount(transferAmount);
                         transferRequest.setNote(notes);
                         if(transferAmount>0){
-                            output=InvokeRest.invokePost(new Gson().toJson(transferRequest),services.getBankingService());
+                            output=InvokeRest.invokePost(new Gson().toJson(transferRequest),services.getBankingService()+"transfer");
                         }else{
                             output=null;
                         }

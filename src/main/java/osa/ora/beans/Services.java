@@ -14,11 +14,14 @@ import java.util.Optional;
  */
 public class Services {
 
-    String userAccountService = "http://localhost:8083/AccountService/V1/accounts/";
+    String userAccountService = "http://localhost:8083/api/v1/accounts/login";
+        //"http://localhost:8083/AccountService/V1/accounts/";
     String userAccountServiceKey = "userAccountService";
-    String customerDataService = "http://localhost:8085/CustomersService/V1/customers/";
+    String customerDataService = "http://localhost:8085/api/v1/customers/";
+        //"http://localhost:8085/CustomersService/V1/customers/";
     String customerDataServiceKey = "customerDataService";
-    String bankingService = "http://localhost:8086/BankAccountService/V1/bankaccounts/";
+    String bankingService = "http://localhost:8086/api/v1/bankaccounts/";
+        //"http://localhost:8086/BankAccountService/V1/bankaccounts/";
     String bankingServiceKey = "bankingService";
     String loanService = "http://localhost:8000/LoanService/V1/";
     String loanServiceKey = "loanService";
