@@ -3,7 +3,7 @@ A Sample internet banking web application using simple Java Web Technologies
 
 # Solution Components
 
-  <img width="960" alt="solution" src="https://user-images.githubusercontent.com/18471537/71544904-9d0d9380-2995-11ea-882c-4b027a328967.png">
+  <img width="960" alt="solution" src="https://user-images.githubusercontent.com/18471537/71592906-0f6fa680-2b43-11ea-97ea-9d9e91a2d985.png">
 
 This web application uses 5 different micro-services, optionally you can connect via API Manager or directly to these services.
 Three of these Micro-services already uses MySQL to persist and query data, while one services connect to ActiveMQ to send messages to one Queue and another service connect to Redis to cach some results.
