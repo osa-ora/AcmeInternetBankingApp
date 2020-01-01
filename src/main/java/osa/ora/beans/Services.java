@@ -23,7 +23,8 @@ public class Services {
     String bankingService = "http://localhost:8086/api/v1/bankaccounts/";
         //"http://localhost:8086/BankAccountService/V1/bankaccounts/";
     String bankingServiceKey = "bankingService";
-    String loanService = "http://localhost:8000/LoanService/V1/";
+    String loanService = " http://localhost:8000/LoanService/V1/loan/";
+        //http://localhost:8000/LoanService/V1/";
     String loanServiceKey = "loanService";
     String exchangeRateService = "http://localhost:8881/api/v1/exchange/";
     String exchangeRateServiceKey = "exchangeRateService";

@@ -50,8 +50,8 @@ public class DataServlet extends HttpServlet {
                         //call loan service
                         String loanAmount = request.getParameter("amount");
                         String monthlyIncome = request.getParameter("monthlyIncome");
-                        output=InvokeRest.invokeGet(services.getLoanServiceService()+"?loanAmount="+loanAmount+
-                                "&creditValue="+monthlyIncome);
+                        output=InvokeRest.invokeGet(services.getLoanServiceService()+loanAmount+
+                                "/"+monthlyIncome);
                         if(output==null){
                             output="-1";
                         }
