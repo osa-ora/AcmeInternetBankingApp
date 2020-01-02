@@ -19,8 +19,8 @@ These services are:
 - BankingService :  
  repository: https://github.com/osa-ora/BankingService
 
-- LoanService : 
- repository: https://github.com/osa-ora/LoanService
+- LoanValService : 
+ repository: https://github.com/osa-ora/LoanValService
 
 - ExchangeRateService :  
  repository: https://github.com/osa-ora/ExchangeRateService
@@ -33,11 +33,11 @@ These services are:
 
 # The service do expect 5 different environment variables to connect to different backend microservices:
 
-- userAccountService the default value is http ://localhost:8083/api/v1/accounts/login 
-- customerDataService the default value is http ://localhost:8085/api/v1/customers/
-- bankingService the default value is http ://localhost:8086/api/v1/bankaccounts/
-- loanService the default value is http ://localhost:8000/LoanService/V1/ 
-- exchangeRateService the default value is http ://localhost:8881/api/v1/exchange/
+- USER_ACCOUNT_SERVICE the default value is http ://localhost:8083/api/v1/accounts/login 
+- CUSTOMER_DATA_SERVICE the default value is http ://localhost:8085/api/v1/customers/
+- BANKING_SERVICE the default value is http ://localhost:8086/api/v1/bankaccounts/
+- LOAN_SERVICE the default value is http ://localhost:8000/LoanService/V1/ 
+- EXCHANGE_RATE_SERVICE the default value is http ://localhost:8881/api/v1/exchange/
 
 # Web Interface
 
