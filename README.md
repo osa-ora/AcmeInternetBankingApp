@@ -3,7 +3,7 @@ A Sample internet banking web application using simple Java Web Technologies
 
 # Solution Components
 
-  <img width="960" alt="solution" src="https://user-images.githubusercontent.com/18471537/71592906-0f6fa680-2b43-11ea-97ea-9d9e91a2d985.png">
+  <img width="915" alt="Solution_Architecture" src="https://user-images.githubusercontent.com/18471537/72225660-0a761280-3599-11ea-843b-f5155f6674d0.png">
 
 This web application uses 5 different micro-services, optionally you can connect via API Manager or directly to these services.
 Three of these Micro-services already uses MySQL to persist and query data, while one services (BankingService) connect to ActiveMQ to send messages to one Queue and another service (ExchangeRateService) connect to Redis to cache some results.
@@ -24,6 +24,8 @@ These services are:
 
 - ExchangeRateService :  
  repository: https://github.com/osa-ora/ExchangeRateService
+
+- Note: the dotted services is not implemented but a typical internet banking microservices application should implement them.
 
 # It is a Netbeans based project that uses Maven to build it simply run: 
 
