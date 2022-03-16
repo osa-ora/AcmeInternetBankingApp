@@ -1,0 +1,11 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: env-settings
+  namespace: dev
+data:
+  BANKING_SERVICE: 'http://{location}/api/v1/bankaccounts/'
+  CUSTOMER_DATA_SERVICE: 'http://{location}/api/v1/customers/'
+  EXCHANGE_RATE_SERVICE: 'http://{location}/api/v1/exchange/'
+  LOAN_SERVICE: 'http://{location}/LoanService/V1/loan/'
+  USER_ACCOUNT_SERVICE: 'http://{location}/api/v1/accounts/login'
