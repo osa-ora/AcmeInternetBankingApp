@@ -1,0 +1,43 @@
+kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: internet-banking
+  namespace: dev
+  labels:
+    application: internet-banking
+spec:
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'internet-banking:latest'
+  resources: {}
+  successfulBuildsHistoryLimit: 5
+  failedBuildsHistoryLimit: 5
+  strategy:
+    type: Source
+    sourceStrategy:
+      from:
+        kind: ImageStreamTag
+        namespace: openshift
+        name: 'jboss-webserver31-tomcat8-openshift:latest'
+      env:
+        - name: MAVEN_MIRROR_URL
+        - name: ARTIFACT_DIR
+      forcePull: true
+  postCommit: {}
+  source:
+    type: Git
+    git:
+      uri: 'https://github.com/osa-ora/AcmeInternetBankingApp'
+      ref: master
+  triggers:
+    - type: GitHub
+      github:
+        secret: iBXx6j7M
+    - type: Generic
+      generic:
+        secret: QhCRjtT5
+    - type: ImageChange
+      imageChange: {}
+    - type: ConfigChange
+  runPolicy: Serial
