@@ -4,8 +4,8 @@ metadata:
   name: env-settings
   namespace: dev
 data:
-  BANKING_SERVICE: 'http://{location}/api/v1/bankaccounts/'
-  CUSTOMER_DATA_SERVICE: 'http://{location}/api/v1/customers/'
-  EXCHANGE_RATE_SERVICE: 'http://{location}/api/v1/exchange/'
-  LOAN_SERVICE: 'http://{location}/LoanService/V1/loan/'
-  USER_ACCOUNT_SERVICE: 'http://{location}/api/v1/accounts/login'
+  BANKING_SERVICE: 'http://banking-service.dev.svc.cluster.local/api/v1/bankaccounts/'
+  CUSTOMER_DATA_SERVICE: 'http://customerdata-service.dev.svc.cluster.local/api/v1/customers/'
+  EXCHANGE_RATE_SERVICE: 'http://exchange-service.dev.svc.cluster.local/api/v1/exchange/'
+  LOAN_SERVICE: 'http://loan-val-service.dev.svc.cluster.local/LoanService/V1/loan/'
+  USER_ACCOUNT_SERVICE: 'http://useraccount-service.dev.svc.cluster.local/api/v1/accounts/login'
