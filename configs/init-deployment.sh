@@ -11,4 +11,5 @@ echo "Please make sure the configmap 'env-settings' has the correct serverless l
 echo "Press [Enter] key to resume..." 
 read
 oc set env deployment/my-gui-app --from configmap/env-settings
-echo "Internet Banking GUI deployed successfully as a serverless" 
+echo "Internet Banking GUI deployed successfully" 
+echo "login using the route/MyInternetBankingApp-1.0-SNAPSHOT/"
